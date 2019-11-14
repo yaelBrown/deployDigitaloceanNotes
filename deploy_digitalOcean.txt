@@ -95,6 +95,74 @@ Run node on digital ocean server
 
 
 
+deployment with codeup [fernando]
+
+Hi Ceres!
+
+We'll be deploying your Java projects this week, and in order to see your sites live, we'll need to do a couple of things:
+
+Buy a domain name. We recommend namecheap if you don't have a preference, but most registrars should be fine.
+
+Configure the DNS settings for your domain to point to digital ocean for the NS record. If you are using namecheap (other registrars will be similar):
+
+Go to your dashboard and click the "manage" button next to your domain
+
+Under "nameservers", change from "BasicDNS" to "custom"
+
+Enter the following nameservers:
+
+ns1.digitalocean.com
+ns2.digitalocean.com
+ns3.digitalocean.com
+Make sure to click the green check mark to apply the changes
+
+At home, sign up for a digital ocean account. We'll give you a coupon code for $25 credit. If you find other coupon codes on the internet, the code we provide you will probably not work in combination with them. Another option is a $50 referral coupon but it's only valid for 30 days: https://m.do.co/c/606bb30ed8fc
+
+Do Not
+
+Create a droplet on digital ocean, we'll walk through this process together in class.
+Buy an ssl/https certificate, we'll be able to get and configure one for free.
+The name of the domain you buy is totally up to you, but you should probably keep it professional so that you can show it off to potential employers. (The TLD does not matter either, that is, for the purposes of deploying, example.com, example.org, and example.lol will all work the same.)
+
+The process for changing the DNS records for a domain can potentially take up to 48 hours, which is why it is important to do this ahead of time, we recommend to do this today.
+
+In addition, I'd encourage y'all to give the deployment guide a once over; we'll be following along with it during class.
+
+
+--- Lecture notes
+DigitalOcean
+  suggests for $10 droplet
+    larger application for capstone.
+
+  Create a new ssh key
+
+  Add public key
+
+  enable backup for real projects
+
+
+C-Name record is a 'wildcard'
+
+
+Namecheap >
+  Change the name servers for the ones in digitalOcean
+
+DigitalOCean
+  Networking[on the left]
+    Add the custom domain that you brought
+    have to create a A-Record.
+      Will be able to respond to the domain and talk to the server
+
+Preparing application
+  Create a script to run the application
+
+git hooks
+  git push production master
+
+
+
+
+
 
 
 
